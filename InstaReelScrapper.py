@@ -17,7 +17,7 @@ google_reel=Reel('enter instagram reel link here')
 google_reel.scrape(headers=headers)
 
 # fstring Format = convenient way to embed python expressions inside string literals for formatting. 
-google_reel.download(fp=f".\\Desktop\\reel{int(time.time())}.mp4")
+google_reel.download(fp=f".//Desktop//reel{int(time.time())}.mp4")
 print('Downloaded Successfully.')
 
 # Now you can download amazing reels but don’t misuse them!
