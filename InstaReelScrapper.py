@@ -5,7 +5,7 @@ import time
 
 # This code will download the reel for sure, but not if you continue to make the request again and again, and hence, you need to pass the session id. Recently, due to updated policies of Instagram, it is not that easy to scrape it. Hence with the above code, we need to pass the session id into the headers as follows:
 
-SESSIONID = "17c4ebb1cb1-74e78d"
+SESSIONID = "{enter you session id here }"
 # SessionID changes every time when you log out. Make sure that you provide the id at the time when you are logged in.
 
 headers = {
@@ -13,7 +13,7 @@ headers = {
 "cookie":f'sessionid={SESSIONID};'
 }
 #test@123
-google_reel=Reel('https://www.instagram.com/reel/CUK1jfGgPGX/?utm_source=ig_web_copy_link')
+google_reel=Reel('enter instagram reel link here')
 google_reel.scrape(headers=headers)
 
 # fstring Format = convenient way to embed python expressions inside string literals for formatting. 
